@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #FBFBFF;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #3E4554;
+    margin-bottom: 24px;
+}
+
+.wrapper {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px -5px 17px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 48px;
+}
+
+.block-left {
+    margin-right: 110px;
+}
+
+.select-block {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.select-box {
+    margin-right: 28px;
+}
+
+.select-box:last-child {
+    margin-right: 0;
+}
+
+.select-box span {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3E4554;
+    margin-bottom: 16px;
+}
+
+.select-box select {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3E4554;
+    padding: 18px 20px;
+    border: 2px solid rgba(237, 237, 237, 0.7);
+    border-radius: 6px;
+    outline: none;
+}
+
+.raiting-wrap {
+    padding: 72px 50px;
+    box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    position: relative;
+}
+
+/*.raiting-box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 93px;
+    color: #3E4554;
+}*/
+
+.raiting-box {
+    width: 285px;
+    height: 285px;
+    position: relative;
+}
+
+.raiting-box .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 93px;
+    color: #3E4554;
+}
+
+.raiting-box .orb {
+    display: block;
+    content: '';
+    width: 35px;
+    height: 35px;
+    border: 11px solid #13D7BC;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: -10px;
+    transform-origin: center 160px;
+    background: #fff;
+    transition: all 1.5s ease-in-out;
+    /*box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+
+.raiting-box .circle-line {
+    transform-origin: center;
+    transform: rotate(90deg);
+    transition: all 1.5s ease-in-out;
+    stroke-dasharray : 560;
+    stroke-dashoffset: 301.10565185546875;
+}
+
