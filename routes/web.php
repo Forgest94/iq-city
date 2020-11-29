@@ -25,11 +25,14 @@ Route::get('/clear', function () {
     return "Кэш очищен.";
 });
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
 Route::get('/', 'IndexController@show');
+Route::get('/{slug}', 'IndexController@subIndex');
 
 Route::get('/api/get/{city}', 'UploadController@get');
 
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+
